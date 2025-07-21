@@ -1,3 +1,5 @@
+import HeroData from "../assets/lib/links.json"
+
 
 function Hero() {
 
@@ -15,12 +17,12 @@ function Hero() {
               <div className="w-[66%] 2xl:w-[960px] h-full hidden min-[460px]:block">
                   <img 
                    className="object-cover w-full h-full"
-                   src="https://assets.brack.ch/static/assets/blta/d/b/3/e/bltadb3e314ded75818/br4-2025-kw29-herobox-kick-it-like-summer-woche-4.jpg"/>
+                   src={HeroData.imageSrc}/>
               </div>
 
               <div className="w-full min-[460px]:w-[34%] 2xl:w-[480px] h-[480px] min-[460px]:h-[345px] lg:h-[480px] overflow-hidden">
                   <iframe
-                    src="https://www.youtube.com/embed/45NkpBNBVVY?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&loop=1&playlist=45NkpBNBVVY"
+                    src={HeroData.videoSrc}
                     title="YouTube Video"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
@@ -34,7 +36,7 @@ function Hero() {
 
         <div className="flex flex-col lg:flex-row justify-between p-[28px] sm:p-[42px] gap-y-4 lg:items-center">
            <div>
-                <h1 className="text-[24px] min-[460px]::text-[32px] leading-[1.125] tracking-[-0.3px] font-semibold" >Mit unseren Sport- und Partyartikeln die Fussballsaison geniessen</h1>
+                <h1 className="text-[24px] min-[460px]:text-[32px] leading-[1.125] tracking-[-0.3px] font-semibold" >Mit unseren Sport- und Partyartikeln die Fussballsaison geniessen</h1>
                 <p className="text-2xl leading-[1.125] tracking-[-0.3px] font-[350] mt-1 hidden md:block">Produkte und Aktionen für den Fussballsommer</p>
            </div>
 
